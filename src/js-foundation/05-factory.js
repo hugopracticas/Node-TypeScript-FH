@@ -20,7 +20,7 @@ const john = buildPerson(obj)
 console.log(john)*/
 
 
-/**Factory function */
+/**Factory function*/
 const buildMakePerson = ({getUuidv4, getAge}) => {
     return ({ name, birthdate}) => {
 
