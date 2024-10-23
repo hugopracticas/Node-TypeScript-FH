@@ -3,15 +3,22 @@
 // const { buildMakePerson } = require("./js-fundation/05-factory");
 // const { getUuidv4, getAge } = require("./plugins");
 //require("./js-fundation/02-destructuring");
-const { getPokemonById } = require("./js-fundation/06-promises");
+//const { getPokemonById } = require("./js-fundation/06-promises");
+const { buildLogger } = require("./plugins");
 
-getPokemonById(1)
-  .then((pokemon) => console.log({ pokemon }))
-  .catch((err) => console.log("Por favor intente de nuevo"))
-  .finally(() => console.log("Finalmente"));
+/**Logger */
+const logger = buildLogger("app.js");
+
+logger.log("Hola mundo");
+logger.error("Estoves algo malo");
+
+/**Get pkemon with axios */
+// getPokemonById(1)
+//   .then((pokemon) => console.log({ pokemon }))
+//   .catch((err) => console.log("Por favor intente de nuevo"))
+//   .finally(() => console.log("Finalmente"));
 
 //console.log(emailTemplate);
-
 // const id = 1;
 // getUserById(id, (error, user) => {
 //   if (error) {
