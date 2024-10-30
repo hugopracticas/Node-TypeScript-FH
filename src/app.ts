@@ -7,7 +7,7 @@ const {buildMakePerson} = require('./js-foundation/05-factory');
 /**
  * Promises
  */
-const {getPokemonById} = require('./js-foundation/06-promises')
+//const {getPokemonById} = require('./js-foundation/06-promises')
 
 //const message = 'Hola Mundo';
 //console.log(message);
@@ -26,7 +26,6 @@ getUserById(id, (error, user) => {
     console.log(user)
 })*/
 
-
 /**Factory function
 const makePerson = buildMakePerson({getUuidv4, getAge});
 
@@ -40,8 +39,9 @@ console.log(hugo);
 /**
  * Promises
  */
-getPokemonById(4)
+/*getPokemonById(4)
     .then((pokemon) => console.log({ pokemon }))
     .catch((err) => console.log({err}))
-    .finally(() => console.log('Finalmente'))
+    .finally(() => console.log('Finalmente'))*/
 
+console.log("Hola mundo");
