@@ -4,13 +4,17 @@
 // const { getUuidv4, getAge } = require("./plugins");
 //require("./js-fundation/02-destructuring");
 //const { getPokemonById } = require("./js-fundation/06-promises");
-const { buildLogger } = require("./plugins");
+
+import { buildLogger } from "./plugins/logger.plugin";
 
 /**Logger */
 const logger = buildLogger("app.js");
 
 logger.log("Hola mundo");
 logger.error("Estoves algo malo");
+/*const logger = buildLogger("app.js");
+
+*/
 
 /**Get pkemon with axios */
 // getPokemonById(1)
