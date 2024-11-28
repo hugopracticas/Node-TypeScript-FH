@@ -1,3 +1,7 @@
+import { error } from "console";
+import { Customer } from "../interfaces/appInterfaces";
+import { customers } from "../data/customers";
+
 interface User {
   id: number;
   name: string;
@@ -24,4 +28,15 @@ export const getUserById = (
   }
 
   return callback(undefined, user);
+};
+
+export const getUserByAge = (
+  age: number,
+  callback: (error?: string, customer?: Customer[]) => void
+) => {
+  const customer = customers.filter((customer) => customer.age < age);
+  if (!customer) {
+    return callback(`Customer less than 18 years dosen't exist`);
+  }
+  return callback(undefined, customer);
 };

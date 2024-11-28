@@ -1,0 +1,1 @@
+{"version":3,"file":"http-client.plugin.js","sourceRoot":"","sources":["../../src/plugins/http-client.plugin.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;AAAA,kDAA0B;AAEb,QAAA,gBAAgB,GAAG;IAC9B,GAAG,EAAE,CAAO,GAAW,EAAE,EAAE;QACzB,iCAAiC;QACjC,kCAAkC;QAClC,eAAe;QACf,MAAM,EAAE,IAAI,EAAE,GAAG,MAAM,eAAK,CAAC,GAAG,CAAC,GAAG,CAAC,CAAC;QACtC,OAAO,IAAI,CAAC;IACd,CAAC,CAAA;CACF,CAAC"}

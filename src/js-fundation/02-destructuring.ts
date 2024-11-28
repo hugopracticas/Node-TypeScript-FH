@@ -6,7 +6,7 @@ const { EDITOR, JAVA_HOME, SDKMAN_PLATFORM } = process.env;
   SDKMAN_PLATFORM,
 });*/
 
-const characters = ["Flash", "Superman", "Batman"];
+export const characters = ["Flash", "Superman", "Batman"];
 
 const [, , batman] = characters;
 
