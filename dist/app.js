@@ -27,10 +27,7 @@ getUserById(id, (error, user) => {
     }
     console.log(user);
 });
-(0, _03_callbacks_1.getUserByAge)(18, (error, customers) => {
-    if ((customers === null || customers === void 0 ? void 0 : customers.length) === 0) {
-        console.log("No hay customers");
-    }
+(0, _03_callbacks_1.getUserByAge)(1, (error, customers) => {
     if (error) {
         throw new Error(error);
     }

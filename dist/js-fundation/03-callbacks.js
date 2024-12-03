@@ -25,6 +25,9 @@ const getUserByAge = (age, callback) => {
     if (!customer) {
         return callback(`Customer less than 18 years dosen't exist`);
     }
+    if (customer.length === 0) {
+        return callback(`No exixtse usuario con ese rango de edad`);
+    }
     return callback(undefined, customer);
 };
 exports.getUserByAge = getUserByAge;

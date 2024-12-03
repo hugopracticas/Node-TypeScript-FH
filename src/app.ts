@@ -38,10 +38,7 @@ getUserById(id, (error: string, user: User) => {
   console.log(user);
 });
 
-getUserByAge(18, (error, customers) => {
-  if (customers?.length === 0) {
-    console.log("No hay customers");
-  }
+getUserByAge(1, (error, customers) => {
   if (error) {
     throw new Error(error);
   }
