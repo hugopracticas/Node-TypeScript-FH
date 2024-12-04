@@ -4,11 +4,13 @@ import { User } from "./interfaces/appInterfaces";
 import { customers } from "./data/customers";
 import { getUserByAge } from "./js-fundation/03-callbacks";
 // const { buildMakePerson } = require("./js-fundation/05-factory");
-// const { getUuidv4, getAge } = require("./plugins");
+const { getUuidv4, getAge } = require("./plugins");
 //require("./js-fundation/02-destructuring");
 //const { getPokemonById } = require("./js-fundation/06-promises");
 
 import { buildLogger } from "./plugins/logger.plugin";
+import { buildMakePerson } from "./js-fundation/05-factory";
+import { getPokemonById } from "./js-fundation/06-promises";
 
 // interface User {
 //   id: number;
@@ -31,7 +33,7 @@ import { buildLogger } from "./plugins/logger.plugin";
 
 //console.log(emailTemplate);
 const id = 2;
-getUserById(id, (error: string, user: User) => {
+/*getUserById(id, (error: string, user: User) => {
   if (error) {
     throw new Error(error);
   }
@@ -43,13 +45,21 @@ getUserByAge(1, (error, customers) => {
     throw new Error(error);
   }
   console.log(customers);
-});
+});*/
 
 /**Factory functions */
-// const makePerson = buildMakePerson({ getUuidv4, getAge });
+/*const makePerson = buildMakePerson({ getUuidv4, getAge });
 
-// const obj = { name: "Hugo", birthdate: "1996-03-15" };
+const obj = { name: "Hugo", birthdate: "1996-03-15" };
 
-// const john = makePerson(obj);
+const john = makePerson(obj);
 
-// console.log({ john });
+console.log({ john });*/
+
+/**Promises, getPokemon() */
+
+const getPokemon = async () => {
+  const pokemon = await getPokemonById(1);
+  console.log("Quien es ese pokemon:", pokemon);
+};
+getPokemon();

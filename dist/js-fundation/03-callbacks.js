@@ -22,9 +22,9 @@ const getUserById = (id, callback) => {
 exports.getUserById = getUserById;
 const getUserByAge = (age, callback) => {
     const customer = customers_1.customers.filter((customer) => customer.age < age);
-    if (!customer) {
-        return callback(`Customer less than 18 years dosen't exist`);
-    }
+    /*if (!customer) {
+      return callback(`Customer less than 18 years dosen't exist`);
+    }*/
     if (customer.length === 0) {
         return callback(`No exixtse usuario con ese rango de edad`);
     }

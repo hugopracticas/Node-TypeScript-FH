@@ -1,7 +1,9 @@
 //const { getUuidv4, getAge } = require("../plugins");
 
-const buildMakePerson = ({ getUuidv4, getAge }) => {
-  return ({ name, birthdate }) => {
+import { BuildMakerPerson, PersonOptions } from "../interfaces/appInterfaces";
+
+export const buildMakePerson = ({ getUuidv4, getAge }: BuildMakerPerson) => {
+  return ({ name, birthdate }: PersonOptions) => {
     return {
       id: getUuidv4(),
       name: name,
@@ -15,7 +17,3 @@ const buildMakePerson = ({ getUuidv4, getAge }) => {
 // const john = buildPerson(obj);
 
 // console.log(john);
-
-module.exports = {
-  buildMakePerson,
-};
