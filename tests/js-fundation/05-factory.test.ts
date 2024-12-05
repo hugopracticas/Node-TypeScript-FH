@@ -5,7 +5,6 @@ describe("js-fundation/05-factory.ts", () => {
   const getAge = () => 34;
   test("buildMakePerson should return a function", () => {
     const makePerson = buildMakePerson({ getUuidv4, getAge });
-    console.log("OBJ", makePerson);
     expect(typeof makePerson).toBe("function");
   });
 
